@@ -1,7 +1,7 @@
 -- loadstring(game:HttpGet('https://raw.githubusercontent.com/StovenChaos/Doors/main/Old%20seek.lua'))()
 for i, seek in pairs(workspace:GetChildren()) do
 	if seek.Name == "SeekMovingNewClone" then
-		wait(0.5)
+		task.wait(0.5)
 		local SeekRig = seek.SeekRig
 		local Figure = seek.Figure
   	  SeekRig.Head.Eye.Decal.Texture = "rbxassetid://0"
