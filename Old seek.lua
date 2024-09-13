@@ -1,4 +1,5 @@
 -- loadstring(game:HttpGet('https://raw.githubusercontent.com/StovenChaos/Doors/main/Old%20seek.lua'))()
+print("erm, hello this is steven")
 workspace.ChildAdded:Connect(function(seek)
 	if seek.Name == "SeekMoving" or seek.Name == "SeekMovingNewClone" then
 		task.wait(0.5)
@@ -15,5 +16,7 @@ workspace.ChildAdded:Connect(function(seek)
 		end
 		Figure.Transparency = 0
 		Figure.Attachment.ParticleEmitter.Enabled = true
+	else
+		return
 	end
 end)
