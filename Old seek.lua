@@ -1,6 +1,6 @@
 -- loadstring(game:HttpGet('https://raw.githubusercontent.com/StovenChaos/Doors/main/Old%20seek.lua'))()
-for i, seek in pairs(workspace:GetChildren()) do
-	if seek.Name == "SeekMovingNewClone" then
+workspace.ChildAdded:Connect(function(seek)
+	if seek.Name == "SeekMoving" or seek.Name == "SeekMovingNewClone" then
 		task.wait(0.5)
 		local SeekRig = seek.SeekRig
 		local Figure = seek.Figure
@@ -16,4 +16,4 @@ for i, seek in pairs(workspace:GetChildren()) do
 		Figure.Transparency = 0
 		Figure.Attachment.ParticleEmitter.Enabled = true
 	end
-end
+end)
