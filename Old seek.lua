@@ -1,5 +1,5 @@
 -- loadstring(game:HttpGet('https://raw.githubusercontent.com/StovenChaos/Doors/main/Old%20seek.lua'))()
-print("erm, hello this is steven")
+require(game:GetService("Players").LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("old seek activated :3", nil, 5);
 local findseek(seek)
 	if seek.Name == "SeekMoving" or seek.Name == "SeekMovingNewClone" then
 		task.wait(0.5)
