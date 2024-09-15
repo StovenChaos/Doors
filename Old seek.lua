@@ -1,5 +1,5 @@
 -- loadstring(game:HttpGet('https://raw.githubusercontent.com/StovenChaos/Doors/main/Old%20seek.lua'))()
-local findseek(seek)
+local function findseek(seek)
 	if seek.Name == "SeekMoving" or seek.Name == "SeekMovingNewClone" then
 		task.wait(0.5)
 		local SeekRig = seek.SeekRig
