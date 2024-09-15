@@ -1,6 +1,6 @@
 -- loadstring(game:HttpGet('https://raw.githubusercontent.com/StovenChaos/Doors/main/Old%20seek.lua'))()
 print("erm, hello this is steven")
-workspace.ChildAdded:Connect(function(seek)
+local findseek(seek)
 	if seek.Name == "SeekMoving" or seek.Name == "SeekMovingNewClone" then
 		task.wait(0.5)
 		local SeekRig = seek.SeekRig
@@ -19,4 +19,8 @@ workspace.ChildAdded:Connect(function(seek)
 	else
 		return
 	end
-end)
+end
+for i, seek in pairs(workspace:GetChildren()) do findseek(seek) end
+workspace.ChildAdded:Connect(function(seek)
+	findseek(seek)
+end
