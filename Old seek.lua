@@ -23,4 +23,4 @@ for i, seek in pairs(workspace:GetChildren()) do findseek(seek) end
 workspace.ChildAdded:Connect(function(seek)
 	findseek(seek)
 end
-require(game:GetService("Players").LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("old seek activated :3", nil, 5);
+require(game:GetService("Players").LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("old seek activated :\3", nil, 5);
