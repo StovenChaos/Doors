@@ -19,7 +19,9 @@ local findseek(seek)
 		return
 	end
 end
-for i, seek in pairs(workspace:GetChildren()) do findseek(seek) end
+for i, seek in pairs(workspace:GetChildren()) do
+	findseek(seek)
+end
 workspace.ChildAdded:Connect(function(seek)
 	findseek(seek)
 end
